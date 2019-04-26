@@ -1,0 +1,86 @@
+.box {
+  position: relative;
+  display: inline-block;
+  margin: 4px;
+}
+
+.range-container input[type="range"] {
+  direction: rtl;
+  width: 400px;
+  background: linear-gradient(#808080, #808080) no-repeat center;
+  background-size: 100% 5px;
+  pointer-events: none;
+}
+
+.range-container input[type="range"] {
+  position: absolute;
+}
+
+#upper {
+  background: none;
+}
+
+.range-selector {
+  -webkit-appearance: none;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.8;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.range-selector:hover {
+  opacity: 1;
+}
+
+.range-selector:first-child::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 0;
+  background: #fff url('../../assets/Kilid-logo-left-to-right.png');
+  background-size: cover;
+  height: 28px;
+  width: 28px;
+  border-radius: 28px;
+  position: relative;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.range-selector:last-child::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  border: 0;
+  background: #fff url('../../assets/Kilid-logo-right-to-left.png');
+  background-size: cover;
+  height: 28px;
+  width: 28px;
+  border-radius: 28px;
+  position: relative;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.range-selector:first-child::-moz-range-thumb {
+  -moz-appearance: none;
+  border: 0;
+  background: #fff url('../../assets/Kilid-logo-left-to-right.png');
+  background-size: cover;
+  height: 28px;
+  width: 28px;
+  border-radius: 28px;
+  position: relative;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.range-selector:last-child::-moz-range-thumb {
+  -moz-appearance: none;
+  border: 0;
+  background: #fff url('../../assets/Kilid-logo-right-to-left.png');
+  background-size: cover;
+  height: 28px;
+  width: 28px;
+  border-radius: 28px;
+  position: relative;
+  cursor: pointer;
+  pointer-events: all;
+}

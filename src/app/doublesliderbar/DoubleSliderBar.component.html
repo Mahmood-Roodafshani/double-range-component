@@ -1,0 +1,8 @@
+<div class="box">
+  <div class="range-container">
+    <input type="range" min="{{MIN_VAL}}" max="{{MAX_VAL}}" value="{{MIN_VAL}}"
+           (input)="startValueChanged($event.target.value)" id="lower" class="range-selector">
+    <input type="range" min="{{MIN_VAL}}" max="{{MAX_VAL}}" value="{{MAX_VAL}}"
+           (input)="endValueChanged($event.target.value)" id="upper" class="range-selector">
+  </div>
+</div>

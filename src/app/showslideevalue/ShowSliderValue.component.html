@@ -1,0 +1,15 @@
+<div class="container">
+
+  <div class="header">
+    محدوده قیمت
+  </div>
+
+  <app-double-slider-bar [minimum]="1707000" [maximum]="30538000" (selectedMinimum)="minChanged($event)"
+                         (selectedMaximum)="maxChanged($event)"></app-double-slider-bar>
+
+  <div class="price-bar">
+    <span class="max">{{max | number}} تومان</span>
+    <span class="min">{{min | number}} تومان</span>
+  </div>
+
+</div>
